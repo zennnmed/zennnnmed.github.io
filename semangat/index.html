@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<meta charset='UTF-8'/><meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport'/><meta content='IE=edge' http-equiv='X-UA-Compatible'/>
+
+  <link rel="icon" type="image/svg+xml" href="https://dilihatyuk.feeldream.repl.co/icon.png"> 
+  <link rel="apple-touch-icon" href="https://dilihatyuk.feeldream.repl.co/icon.png">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+  
+  <script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script><link href="https://feeldreams.github.io/lihatya/style.css" rel="stylesheet" type="text/css" />
+  <script src="https://unpkg.com/scrollreveal"></script>
+  
+<head>
+<title>Buat Kamu</title>
+<meta name="description" content="HTML Feeldream Repl Co">
+</head>
+<body>
+	
+   <div class="overlay">
+     <div class="loading-message">Hai kamu!<br>Tunggu dulu ya..</div>
+   </div>
+
+   <audio src="https://feeldreams.github.io/audio/everything.mp3" id="linkmp3" class="sembunyi"></audio>
+   
+   <section class="first" onclick="playaud()">
+       <div class="wp"><img id="imgsatu" src="https://feeldreams.github.io/pics/awan/1.jpg"/></div>
+       <img id="first_stiker" class="stiker fade-in" src="https://feeldreams.github.io/bunga.gif"/>
+       <h2 class="title">haloo buat kamu</h2>
+       <h4 class="title"><i>gua ada sesuatu Nih</i></h4>
+       <p class="slide-up"><i>Scroll ke bawah ya...</i></p>
+  </section>
+  
+  <section class="third" onclick="playaud()">
+       <div class="wp"><img id="imgtiga" src="https://feeldreams.github.io/pics/awan/3.jpg"/></div>
+       <img class="stiker fade-in" src="https://feeldreams.github.io/pusn.gif"/>
+       <h3 class="title">semangatt yaa!!!<br>gapapa kok:), Kita udh ngasih yang terbaik.<br>emang kenyataan itu aneh, tp semuanya udh di rencanain.<br>Kecewa itu gapapa, tapi jangan sampe berkelanjutan yaa<br>kamu harus janji sama diri kamu sendiri<br>kalo kamu gagal sekali, kamu harus bangkit dua kali</h3>
+       <p id="teksnimasisatu">Kita udh ngasih yang terbaik<br>emang kenyataan itu aneh, tp semuanya udh di rencanain</p>
+  </section>
+  
+  <section class="second" onclick="playaud()">
+       <div class="wp"><img id="imgdua" src="https://feeldreams.github.io/pics/awan/2.jpg"/></div>
+       <img class="stiker fade-in" src="https://feeldreams.github.io/cilukba.gif"/>
+       <h3 class="title">kecewa itu gapapa<br>tapi jangan sampe berkelanjutan yaa:)</h3>
+  </section>
+  
+  <section class="fifth" onclick="playaud()">
+  	   <div class="wp"><img id="imglima" src="https://feeldreams.github.io/pics/awan/3.jpg"/></div>
+       <img id="stikersatu" class="stiker fade-in" src="https://feeldreams.github.io/bwa2.gif"/>
+       <img id="stikerdua" src="https://feeldreams.github.io/weee.gif"/>
+       <h3 id="teksnimasi">harus janji sama diri sendiri,<br>inget, gagal sekali harus bangkit 2 kali</h3>
+    <div id="Tombol">
+       <a id="By" onClick="fungsimau()">janji?</a>
+       <a id="Bn" onClick="fungsigamau()">Gak!</a>
+     </div>
+  </section>
+  
+  <section id="iniakhir">
+  	<div class="wp" id="wpakhir"><img src="https://feeldreams.github.io/pics/awan/6.jpg"/></div>
+       <img id="stikerakhir" class="stiker fade-in" src="https://feeldreams.github.io/cilukba.gif"/>
+       <img id="stikerakhir2" style="display:none" src="https://feeldreams.github.io/emawh.gif"/>
+       <h1 id="judulakhir"></h1>
+       <p id="kalimatakhir"></p>
+       <p id="palingakhir"></p>
+       <div id="TombolWA">
+       <a onClick="menuju()">Kirim </a>
+     </div>
+  </section>
+  
+  <div id="initom" class="menu">
+  <a class='tombol' onclick="tes()">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/> </svg>
+  </a>
+  </div>
+
+  <script>
+    const body = document.querySelector("body"); audio = new Audio('' + linkmp3.src); function berjatuhan() {const heart = document.createElement("div"); heart.className = "fas fa-heart"; heart.style.left = (Math.random() * 90)+"vw"; heart.style.animationDuration = (Math.random()*3)+2+"s"; body.appendChild(heart);} setInterval(function name(params) {var heartArr = document.querySelectorAll(".fa-heart"); if (heartArr.length > 100) {heartArr[0].remove()}},100);initom.style="opacity:0;bottom:0;transition:none";
+    
+    function fungsimau(){
+           fungsi=0;tes();
+           teksjudulakhir = "Yeayyy, baguss di tepatin yaa";
+           tekskalimatakhir = "Satu Lagi Nih, jangan pernah berburuk sangka<br>sama yang<b>diatas</b>?<br><br>karna semuanya udh dalam keputusan <b>`yang diatas`</b><br>inget ituu....";
+           tekspalingakhir = "jangan lupa selalu inget sama yang diatas<br>ke di jamin pasti lancar";
+           pesanwhatsapp = "dah cuma mau ngomong itu aja, semangatttt!!!!";
+      }
+    function fungsigamau(){
+           fungsi=0;tes();
+           teksjudulakhir = "Yahhh:(";
+           tekskalimatakhir = "harus janji dong,<br>gua yakin kalo kamu udah jani ke diri kamu sendiri pasti ada tekad";
+           tekspalingakhir = "jangan sampe gagal di awal<br>malah semakin down";
+           pesanwhatsapp = "inget tujuan kamuu, dan yakini kalo kamu pati bisa";
+      }
+    </script>
+    <script src="https://feeldreams.github.io/lihatya/script.js"></script>
+    </body>
+    </html>
